@@ -1,0 +1,6 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER"
+}

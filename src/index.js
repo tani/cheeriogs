@@ -1,0 +1,1 @@
+global.cheerio = require('cheerio');
