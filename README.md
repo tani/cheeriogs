@@ -1,5 +1,7 @@
 # Cheerio for Google Apps Script
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/asciian/cheeriogs.svg)](https://greenkeeper.io/)
+
 This project is unofficial update of https://github.com/3846masa/cheerio-gasify.
 Difference to the project is follows.
 
