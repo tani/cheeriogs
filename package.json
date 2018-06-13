@@ -1,0 +1,33 @@
+{
+  "name": "cheeriogs",
+  "version": "1.0.0-rc.2",
+  "description": "Cheerio for Google Apps Script",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack src/index.js --output dist/index.js --plugin gas-webpack-plugin --mode none",
+    "push": "clasp push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asciian/cheeriogs.git"
+  },
+  "keywords": [
+    "GoogleAppsScript",
+    "GAS"
+  ],
+  "author": "TANIGUCHI Masaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asciian/cheeriogs/issues"
+  },
+  "homepage": "https://github.com/asciian/cheeriogs#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "gas-webpack-plugin": "^0.3.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.4"
+  }
+}
