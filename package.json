@@ -4,7 +4,7 @@
   "description": "Cheerio for Google Apps Script",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack src/index.js --output dist/index.js --plugin gas-webpack-plugin --mode none",
+    "build": "webpack src/index.js --output dist/index.es5 --plugin gas-webpack-plugin --mode none && babel dist/index.es5 --out-file dist/index.js && rimraf dist/index.es5",
     "push": "clasp push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,8 +26,17 @@
     "cheerio": "^1.0.0-rc.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "babel-preset-gas": "^1.0.1",
     "gas-webpack-plugin": "^0.3.0",
+    "rimraf": "^2.6.2",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.4"
+  },
+  "babel": {
+    "presets": [
+      "gas"
+    ]
   }
 }

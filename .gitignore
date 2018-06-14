@@ -61,4 +61,4 @@ typings/
 .next
 
 # dist
-dist/index.js
+dist/index.*
