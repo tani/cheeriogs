@@ -1,1 +1,1 @@
-global.cheerio = require('cheerio');
+global.Cheerio = require('cheerio');
