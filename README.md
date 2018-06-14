@@ -10,3 +10,11 @@ Difference to the project is follows.
 
 
 Script ID: `1ReeQ6WO8kKNxoaA_O0XEQ589cIrRvEBA9qcWpNqdOP17i47u6N9M5Xh0`
+
+## Usage
+
+```js
+const content = UrlFetchApp.fetch('https://example.com/').getContentText();
+const $ = Cheerio.load(content);
+Logger.log($('p .blah').fist().text()); // blah blah blah ...
+```
