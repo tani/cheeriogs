@@ -4,7 +4,7 @@
   "description": "Cheerio for Google Apps Script",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack src/index.js --output dist/index.js --plugin gas-webpack-plugin --plugin es3-compatible-webpack-plugin --mode none --module-bind js=babel-loader",
+    "build": "rollup -c -l",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,28 +21,19 @@
     "url": "https://github.com/asciian/cheeriogs/issues"
   },
   "homepage": "https://github.com/asciian/cheeriogs#readme",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-transform-member-expression-literals": "^7.0.0-beta.51",
+    "@babel/plugin-transform-property-literals": "^7.0.0-beta.51",
     "@babel/polyfill": "^7.0.0-beta.51",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "babel-loader": "^8.0.0-beta.3",
-    "es3-compatible-webpack-plugin": "git+https://github.com/asciian/es3-compatible-webpack-plugin.git",
-    "gas-webpack-plugin": "^0.3.0",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.4"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "modules": false
-        }
-      ]
-    ]
+    "cheerio": "^1.0.0-rc.2",
+    "rollup": "^0.56.0",
+    "rollup-plugin-babel": "^4.0.0-beta.5",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-gas": "^1.0.0",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
