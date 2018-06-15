@@ -1,3 +1,2 @@
-import '@babel/polyfill';
-import * as cheerio from 'cheerio';
-global.load = cheerio.load;
+require('core-js');
+global.load = require('cheerio').load;
