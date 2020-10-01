@@ -1,5 +1,4 @@
 const GasPlugin = require('gas-webpack-plugin');
-const BabelPlugin = require('babel-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -9,9 +8,24 @@ module.exports = {
         path: __dirname,
         filename: 'dist/index.js'
     },
+    module: {
+        rules: [{
+            test: /\\.js$/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }]
+    },
     plugins: [
-        new BabelPlugin({ presets: ["gas"] }),        
         new GasPlugin(),
-        new CopyPlugin([{from: 'appsscript.json', to: 'dist/appsscript.json'}])
+        new CopyPlugin({
+            patterns: [{
+                from: 'appsscript.json',
+                to: 'dist/appsscript.json'
+            }]
+        })
     ]
-}
+};

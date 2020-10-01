@@ -5,7 +5,7 @@ This project is unofficial update of https://github.com/3846masa/cheerio-gasify.
 Difference to the project is follows.
 
 - Using webpack with [gas-webpack-plugin](https://github.com/fossamagna/gas-webpack-plugin)
-- Updating [cheerio](https://github.com/cheeriojs/cheerio) to 1.0.0-rc.2
+- Updating [cheerio](https://github.com/cheeriojs/cheerio) to 1.0.0-rc.3
 - Exporting the function `load` as same as `cheerio.load`
 
 
@@ -48,3 +48,11 @@ Press Save. You can now use the Cheerio (cheeriogs) library in your code.
     Utilities.formatString("<html>%s</html>", $('html').html())
   );
 ```
+
+## FAQ
+
+### Why does not my project debug?
+
+The latest Google App Script uses V8 runtime.
+Version 12 of Cheeriogs supports the runtime.
+Please upgrade your script.

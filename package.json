@@ -1,6 +1,6 @@
 {
   "name": "cheeriogs",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "description": "Cheerio for Google Apps Script",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asciian/cheeriogs.git"
+    "url": "git+https://github.com/tani/cheeriogs.git"
   },
   "keywords": [
     "google",
@@ -18,19 +18,20 @@
   "author": "TANIGUCHI Masaya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/asciian/cheeriogs/issues"
+    "url": "https://github.com/tani/cheeriogs/issues"
   },
-  "homepage": "https://github.com/asciian/cheeriogs#readme",
+  "homepage": "https://github.com/tani/cheeriogs#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "core-js": "^2.5.7"
+    "cheerio": "^1.0.0-rc.3"
   },
   "devDependencies": {
-    "babel-preset-gas": "1.0.0",
-    "babel-webpack-plugin": "0.1.1",
-    "copy-webpack-plugin": "^4.5.1",
-    "gas-webpack-plugin": "^0.3.0",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.6"
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@google/clasp": "^2.3.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "gas-webpack-plugin": "^1.2.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
