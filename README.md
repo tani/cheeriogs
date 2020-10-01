@@ -22,6 +22,12 @@ Press Save. You can now use the Cheerio (cheeriogs) library in your code.
 
 ## Usage
 
+```js
+function getContent_(url) {
+    return UrlFetchApp.fetch(url).getContentText()
+}
+```
+
 ### Returns the content of Wikipedia's Main Page
 
 ```js
