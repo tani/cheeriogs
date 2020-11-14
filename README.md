@@ -57,8 +57,8 @@ function getContent_(url) {
 
 ## FAQ
 
-### Why does not my project debug?
+### Why can not I debug my code?
 
 The latest Google App Script uses V8 runtime.
 Version 12 of Cheeriogs supports the runtime.
-Please upgrade your script.
+Please upgrade your script. Then, you can do it.
