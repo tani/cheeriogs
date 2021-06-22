@@ -1,5 +1,4 @@
 const GasPlugin = require('gas-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'none',
@@ -21,11 +20,5 @@ module.exports = {
     },
     plugins: [
         new GasPlugin(),
-        new CopyPlugin({
-            patterns: [{
-                from: 'appsscript.json',
-                to: 'dist/appsscript.json'
-            }]
-        })
     ]
 };
