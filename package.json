@@ -1,6 +1,6 @@
 {
   "name": "cheeriogs",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0-rc.10",
   "description": "Cheerio for Google Apps Script",
   "main": "src/index.js",
   "scripts": {
