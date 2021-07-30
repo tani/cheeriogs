@@ -29,7 +29,7 @@
     "@babel/preset-env": "7.14.8",
     "@google/clasp": "2.4.0",
     "babel-loader": "8.2.2",
-    "gas-webpack-plugin": "2.0.2",
+    "gas-webpack-plugin": "2.1.0",
     "webpack": "5.47.1",
     "webpack-cli": "4.7.2"
   }
