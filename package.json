@@ -27,7 +27,7 @@
   "devDependencies": {
     "@babel/core": "7.19.1",
     "@babel/preset-env": "7.19.1",
-    "@google/clasp": "2.4.1",
+    "@google/clasp": "2.4.2",
     "babel-loader": "8.2.5",
     "gas-webpack-plugin": "2.3.0",
     "webpack": "5.74.0",
