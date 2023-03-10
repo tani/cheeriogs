@@ -30,7 +30,7 @@
     "@google/clasp": "2.4.2",
     "babel-loader": "9.1.2",
     "gas-webpack-plugin": "2.3.0",
-    "webpack": "5.76.0",
+    "webpack": "5.76.1",
     "webpack-cli": "5.0.1"
   }
 }
