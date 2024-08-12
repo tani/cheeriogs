@@ -1,6 +1,6 @@
 {
   "name": "cheeriogs",
-  "version": "1.0.0-rc.12",
+  "version": "1.0.0",
   "description": "Cheerio for Google Apps Script",
   "main": "src/index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/tani/cheeriogs#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0"
   },
   "devDependencies": {
     "@google/clasp": "2.4.2",
